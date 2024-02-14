@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: golang
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/dhaynes-tenant/golang/golang@sha256:5d1b82bc1b79f7ebe55384751ca754c69a87416a5368cfc2842050fffe7ac2ff
+        name: my-go
+        resources: {}
+status: {}
