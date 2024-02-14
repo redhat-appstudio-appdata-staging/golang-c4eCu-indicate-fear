@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: golang
     spec:
       containers:
-      - image: go-image:latest
+      - image: quay.io/redhat-user-workloads-stage/dhaynes-tenant/golang/golang@sha256:5d1b82bc1b79f7ebe55384751ca754c69a87416a5368cfc2842050fffe7ac2ff
         name: my-go
         ports:
         - containerPort: 8081
